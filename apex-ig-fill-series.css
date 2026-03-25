@@ -1,0 +1,26 @@
+/* Page Designer → CSS Section */
+/* Adds copy indicator icon for Interactive Grid cells */
+
+.checkname {
+position: relative;
+padding-right: 25px;
+}
+.checkname::after {
+content: "^";
+font-size: 16px;
+font-weight: bold;
+color: #db3338;
+position: absolute;
+top: 50%;
+right: 5px;
+transform: translateY(-50%);
+background: white;
+border-radius: 50%;
+width: 18px;
+height: 18px;
+display: flex;
+align-items: center;
+justify-content: center;
+box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+cursor: pointer;
+}
